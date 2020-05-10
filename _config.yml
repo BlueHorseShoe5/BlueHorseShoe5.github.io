@@ -1,0 +1,47 @@
+# Build settings
+permalink: /blog/:year/:title/
+markdown: kramdown
+highlighter: pygments
+plugins: [jekyll-paginate-v2]
+
+pagination:
+  enabled: true
+  per_page: 3
+  permalink: "/page/:num/"
+
+comments: false
+
+source: source
+destination: _site
+sass:
+  sass_dir: _sass
+  style: compressed # expanded
+
+# SEO settings
+title: Franco Jovan
+description: "Franco Jovan's pesonal website"
+keywords: "finance, invest, yolo"
+baseurl: ""
+google_analytics: UA-52446115-1
+
+
+# Author settings
+author:
+  name: Jovan A. Franco
+  job: Wealth Manager de HNW people
+  bio: "Estoy especializado en administración de portafolios y servicios forenses en materia económica y financiera."
+  thumb: /images/author.jpg
+  email: mailto:jovan.franco@extocapital.com.mx
+  twitter: https://twitter.com/jovanfrancor
+  linkedin: http://linkedin.com/in/jovanfranco
+  company: https://www.extoinvestments.com
+  favicon: /images/money.png
+
+# navbar pages
+navbar:
+  - slug: about
+    title: sobre mi
+  - slug: blog
+    title: Blog
+
+exclude: ["config.rb", "src", "Gemfile", "Gemfile.lock", "package.json","README.md", "Rakefile"]
