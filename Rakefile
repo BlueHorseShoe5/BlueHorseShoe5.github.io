@@ -19,7 +19,7 @@ require "bourbon"
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "BlueHorseShoe5/BlueHorseShoe5.github.io"
-GITHUB_REPO_BRANCH = "publish"
+GITHUB_REPO_BRANCH = "master"
 
 SOURCE = "source/"
 DEST = "_site"
