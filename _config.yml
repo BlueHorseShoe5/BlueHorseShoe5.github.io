@@ -30,6 +30,7 @@ author:
   name: Jovan A. Franco
   job: Wealth Manager de HNW people
   bio: "Estoy especializado en administración de portafolios y servicios forenses en materia económica y financiera."
+  bio_extra: "La banca privada y patrimonial en México limita las comisiones a los asesores o agentes que traen cartera de clientes. Si buscas mayores comisiones y beneficios para tus clientes contáctame."
   thumb: /images/author.jpg
   email: mailto:jovan.franco@extocapital.com.mx
   twitter: https://twitter.com/jovanfrancor
@@ -40,7 +41,7 @@ author:
 # navbar pages
 navbar:
   - slug: about
-    title: sobre mi
+    title: Sobre mí
   - slug: blog
     title: Blog
 
