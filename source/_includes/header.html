@@ -16,9 +16,8 @@
     <nav class="navbar">
       <ul>
         <li><a href="{{ '/' | prepend: site.baseurl }}" style="text-transform:capitalize;" title="Home">Home</a></li>
-        {% for item in site.navbar %}
-          <li><a href="{{ '/' | prepend: site.baseurl }}{{ item.slug }}" style="text-transform:capitalize;" title="{{ item.title }}">{{ item.title }}</a></li>
-        {% endfor %}
+        <li><a href="/about"  style="text-transform:none;" title="Sobre mí">Sobre mí</a></li>
+        <li><a href="/blog" style="text-transform:none;" title="Blog">Blog</a></li>
       </ul>
     </nav>
   </div>
