@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Riesgos coherentes y momentos de orden superior en un portafolio</title>
+<meta name="description" content="Artzner, Delbaen, Eber y Heath definen el riesgo en términos de cambios en los valores entre dos fechas  argumentan que debido al riesgo, está relacionado co...">
+
+<link rel="stylesheet" href="/css/main.css">
+<link rel="canonical" href="/riesgos-coherentes-y-momentos-de-orden-superior-en-un-portafolio">
+<link rel="alternate" type="application/rss+xml" title="Franco Jovan" href="/feed.xml" />
+<link rel="shortcut icon" type="image/png" href="/images/favicon.png"/>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52446115-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+</head>
+<body>
+  <header class="site-header">
+  <div class="container">
+    <input type="checkbox" id="toggleNavbar">
+    <h1 class="logo">
+      <a href="/" style="text-transform:capitalize;">
+        Jovan
+        <span>
+          Franco
+        </span>
+      </a>
+    </h1>
+    <label for="toggleNavbar" role="button" class="toggle-navbar-button">
+      <i class="icon icon-menu"></i>
+      <i class="icon icon-cross"></i>
+    </label>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/" style="text-transform:capitalize;" title="Home">Home</a></li>
+        <li><a href="/about"  style="text-transform:none;" title="Sobre mí">Sobre mí</a></li>
+        <li><a href="/blog" style="text-transform:none;" title="Blog">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="main-container">
+  <div class="container">
+    <article role="article" class="post">
+
+  <div class="card">
+    <header class="post-header">
+      <h1 class="post-title">Riesgos coherentes y momentos de orden superior en un portafolio</h1>
+      <em class="post-meta">
+        <time>Jul 12, 2020</time>
+      </em>
+    </header>
+
+    <div class="post-content">
+      
+        <figure class="post-thumbnail ">
+          <img src="/images/riesgos.jpg" alt="Riesgos coherentes y momentos de orden superior en un portafolio">
+        </figure>
+      
+      <p>Artzner, Delbaen, Eber y Heath definen el riesgo en términos de cambios en los valores entre dos fechas <script type="math/tex">(0,T)</script> argumentan que debido al riesgo, está relacionado con la variabilidad del valor futuro de una posición debido a cambios en el mercado o, en general, a eventos inciertos, es mejor considerar solo los valores futuros. Observaron que no es necesario que los costos iniciales de los componentes de la posición se determinen a partir de precios de mercado universalmente definidos. Una primera medida del riesgo de una posición será si su valor futuro pertenece o no al subconjunto de riesgos aceptables, según lo que decida un organismo regulador como: (a) un regulador que tiene en cuenta lo desfavorable establece cuando se permite una posición de riesgo que puede recurrir a los recursos del gobierno, por ejemplo, como garante de último recurso; (b) una empresa de compensación de una bolsa que tiene que cumplir con las promesas a todas las partes de que las transacciones se completen de manera segura; (c) un administrador de inversiones que sabe que su empresa básicamente ha dado a sus operadores una opción de salida donde el “precio” de ejercicio consiste en ser despedido en caso de grandes pérdidas comerciales en la posición de uno (1998).</p>
+
+<h2 id="axiomas-de-aceptación">Axiomas de aceptación</h2>
+
+<p>Cuando tratamos con el riesgo de mercado, el estado del mundo podría describirse mediante una lista de los precios de todos los valores y todos los tipos de cambio, y suponemos que se conoce el conjunto de todas estas listas posibles. Por supuesto, esto supone que los mercados en la fecha T Son líquidos; si no lo son, se requieren modelos más complicados, donde podemos distinguir los riesgos de una posición y de un patrimonio neto futuro, ya que, con mercados ilíquidos, la asignación de la primera a la segunda puede no ser lineal.
+Retomaremos los axiomas más importantes:</p>
+<ul>
+  <li>Translation invariance: indica que la función principal de una medida de riesgo es clasificar adecuadamente los riesgos.</li>
+  <li>Subaditividad: supongamos que dos escritorios en una empresa calculan de manera descentralizada las medidas ρ (X1) y ρ (X2) de los riesgos que han tomado. Si la función ρ es subaditiva, el supervisor de los dos escritorios puede contar con el hecho de que ρ (X1) + ρ (X2) es una garantía factible en relación con el riesgo global X1 + X2. Si de hecho tiene una cantidad m de efectivo disponible para su negocio conjunto, sabe que imponer límites m1 y m2 con m = m1 + m2, le permite descentralizar su restricción de efectivo en dos restricciones de efectivo, una por escritorio.</li>
+  <li>Homogeneidad positiva: Si el tamaño de la posición influye directamente en el riesgo (por ejemplo, si las posiciones son lo suficientemente grandes como para que el tiempo requerido para liquidarlas dependa de sus tamaños), deberíamos considerar las consecuencias de la falta de liquidez al calcular el patrimonio neto futuro de una posición.</li>
+  <li>Monotonía: descarta la medida de riesgo definida por ρ (X) = -EP [X] + α · σP (X), donde α&gt; 0 y donde σP denota el operador de desviación estándar, calculado bajo la probabilidad P.</li>
+</ul>
+
+<p>Por lo tanto, la coherencia se define como una medida de riesgo que cumpla con los cuatro axiomas. Por ejemplo: el modelo conocido como “Value At Risk” (VaR) no es una medida de riesgo “coherente”, debido al hecho de que el VaR es un cuantil en la distribución de ganancias y pérdidas y no una expectativa y no cumple con el requisito de la subaditividad.</p>
+
+<h2 id="activos-de-riesgo-y-momentos-de-orden-superior">Activos de riesgo y momentos de orden superior</h2>
+
+<p>Los activos riesgosos tienen un importante papel que desempeñar en los portafolios de la mayoría de los inversionistas en un mercado liquido. Los inversionistas suelen ser caracterizados por niveles de riesgo y de riqueza, ciertas estrategias tienden a tener un riesgo similar pero suelen ser diferentes por la naturaleza de los instrumentos; otros tienden a encajar mejor en un grupo de riesgo de tipo patrimonial. La clasificación es arbitraria ya que no hay una definición exacta. Sin embargo, discutiendo el Investment Policy Statement (IPS), puedes encontrar donde pertenece tu cliente con sus respectivas restricciones.</p>
+
+<p>Las mayoría de estrategias de inversión están en función de rendimiento y las expectativas de riesgo - rendimiento por unidad de inversión. En este orden de ideas, los inversionistas son compensados por las distribuciones de rendimientos asociadas con una leptocurtosis y un sesgo negativo, y en algunos casos, sesgo positivo. Como tal, una optimización tradicional de mínima varianza tenderá a no ser preciso, debido a que el mercado no se distribuye de manera normal.</p>
+
+<p>Como lo menciona Brunel (2002) esto crea un enigma, ya que tiende a exponer al inversionista al riesgo de establecer una exposición máxima, buscando soluciones, que van desde un modelo sofisticado hasta un modelo simple. Recordemos que los <em>hedge funds</em> surgieron porque los administradores de portafolios identifican la oportunidad que brinda la liquidez limitada, asimetrías de información y costos de transacción significativos. Implican estrategias que permiten a los inversionistas cambiarse de clases de activos de inversión, sin una restricción por un banco o casa de bolsa. Agentes económicos con estrategias simples que buscan beneficiarse de circunstancias del mercado, o estrategias con características de una distribución de rendimientos normal es insuficiente. Por lo tanto, se debe de buscar medidas que ponderan los pesos para incorporar modelos con una $R^2$ más significativa. Por lo tanto, hay un largo camino por recorrer para poder incorporar los cuatro momentos (promedio, desviación estándar, asimetría y curtosis), correlaciones, co-asimetría y co-curtosis en un portafolio de inversión. Davies, Kat y Lu (2004) identifican que algunos <em>hedge funds</em> incorporan algunos activos debido a una baja co-varianza, un alto co-sesgo y una baja co-curtosis. Finalmente, es interesante incorporar medidas para distribuciones no-Gaussianas en un portafolio.</p>
+
+<h3 id="bibliografía">Bibliografía</h3>
+
+<p>Artzner, Delbaen, Eber y Heath. (1998). Coherent Risk Measures. Mathematical Finance, Vol. 9, No. 3 (July 1999), 203–228.</p>
+
+<p>Brunel, J. (2002). Integrated Wealth Management: The New Direction for Portfolio Managers. Institutional Investor Books.</p>
+
+<p>Davies, Ryan J. and Kat, Harry M. and Lu, Sa, Fund of Hedge Funds Portfolio Selection: A Multiple-Objective Approach (September 2005). Cass Business School Research Paper, ttps://ssrn.com/abstract=476862</p>
+
+    </div>
+  </div>
+
+</article>
+
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <ul class="social">
+  <li><a href="mailto:jovan.franco@extocapital.com.mx" target="_blank"><i class="icon icon-mail4"></i></a></li>
+  <li><a href="https://twitter.com/jovanfrancor" target="_blank"><i class="icon icon-twitter"></i></a></li>
+  <li><a href="http://linkedin.com/in/jovanfranco" target="_blank"><i class="icon icon-linkedin"></i></a></li>
+  <li><a href="https://www.extoinvestments.com" target="_blank"><i class="icon icon-briefcase"></i></a></li>
+</ul>
+    <p class="txt-medium-gray">
+      <small>&copy;2021 All rights reserved.</small>
+      <small>Creado por <a href="https://www.linkedin.com/in/mario-mendez-d/">Mario Mendez</a>.</small>
+    </p>
+  </div>
+</footer>
+
+
+</body>
+</html>

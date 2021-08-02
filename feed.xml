@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Franco Jovan</title>
+    <description>Franco Jovan's pesonal website</description>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 01 Aug 2021 23:24:43 -0500</pubDate>
+    <lastBuildDate>Sun, 01 Aug 2021 23:24:43 -0500</lastBuildDate>
+    <generator>Jekyll v3.6.3</generator>
+    
+      <item>
+        <title>Griegas de orden superior</title>
+        <description>&lt;p&gt;En el mercado de derivados es común medir los factores que afectan el precio de un contrato de opciones mediante griegas comunes (Delta, Gamma, Theta, Vega y Rho).&lt;/p&gt;
+
+&lt;p&gt;Donde:&lt;/p&gt;
+
+&lt;p&gt;– Delta: mide cuánto se espera que cambie el precio de una opción por cada cambio de $ 1 en el precio del valor o índice subyacente.&lt;/p&gt;
+
+&lt;p&gt;– Gamma: mide la tasa de cambio en el Delta de una opción por cada cambio de $ 1 en el precio de las acciones subyacentes.&lt;/p&gt;
+
+&lt;p&gt;– Theta: mide el cambio en el precio de una opción por una disminución de un día en su tiempo de vencimiento.&lt;/p&gt;
+
+&lt;p&gt;– Vega: mide la tasa de cambio en el precio de una opción por 1% de cambio en la volatilidad implícita de las acciones subyacentes.&lt;/p&gt;
+
+&lt;p&gt;– Rho: mide el cambio esperado en el precio de una opción por un cambio de punto porcentual en las tasas de interés.&lt;/p&gt;
+
+&lt;p&gt;Dichas griegas te indican como estás al momento, sin embargo, ¿sabes cómo reaccionará tu portafolio?&lt;/p&gt;
+
+&lt;p&gt;La respuesta son las griegas de orden superior, que indican lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;– Vomma: mide cuánto cambiará la Vega con respecto a la volatilidad en el mercado.&lt;/p&gt;
+
+&lt;p&gt;– Vanna: mide cuánto cambiará Vega con respecto a los cambios en el precio subyacente.&lt;/p&gt;
+
+&lt;p&gt;– Charm: mide cuánto cambiará Delta cada día.&lt;/p&gt;
+
+&lt;p&gt;– Veta: mide cuánto Vega cambia cada día.&lt;/p&gt;
+
+&lt;p&gt;– Lambda: mide el cambio porcentual de las opciones relativas del subyacente.&lt;/p&gt;
+
+&lt;p&gt;– Ultimate: mide cuánto cambiará Vomma con respecto a los cambios de volatilidad implícitos.&lt;/p&gt;
+
+&lt;p&gt;– Velocidad: mide cuánto cambiará Gamma con respecto a los cambios subyacentes.&lt;/p&gt;
+
+&lt;p&gt;Finalmente, incluyendo estas griegas de orden superior puedes administrar tu portafolio de derivados de una manera óptima.&lt;/p&gt;
+</description>
+        <pubDate>Tue, 21 Jul 2020 17:06:16 -0500</pubDate>
+        <link>/griegas-de-orden-superior</link>
+        <guid isPermaLink="true">/griegas-de-orden-superior</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Riesgos coherentes y momentos de orden superior en un portafolio</title>
+        <description>&lt;p&gt;Artzner, Delbaen, Eber y Heath definen el riesgo en términos de cambios en los valores entre dos fechas &lt;script type=&quot;math/tex&quot;&gt;(0,T)&lt;/script&gt; argumentan que debido al riesgo, está relacionado con la variabilidad del valor futuro de una posición debido a cambios en el mercado o, en general, a eventos inciertos, es mejor considerar solo los valores futuros. Observaron que no es necesario que los costos iniciales de los componentes de la posición se determinen a partir de precios de mercado universalmente definidos. Una primera medida del riesgo de una posición será si su valor futuro pertenece o no al subconjunto de riesgos aceptables, según lo que decida un organismo regulador como: (a) un regulador que tiene en cuenta lo desfavorable establece cuando se permite una posición de riesgo que puede recurrir a los recursos del gobierno, por ejemplo, como garante de último recurso; (b) una empresa de compensación de una bolsa que tiene que cumplir con las promesas a todas las partes de que las transacciones se completen de manera segura; (c) un administrador de inversiones que sabe que su empresa básicamente ha dado a sus operadores una opción de salida donde el “precio” de ejercicio consiste en ser despedido en caso de grandes pérdidas comerciales en la posición de uno (1998).&lt;/p&gt;
+
+&lt;h2 id=&quot;axiomas-de-aceptación&quot;&gt;Axiomas de aceptación&lt;/h2&gt;
+
+&lt;p&gt;Cuando tratamos con el riesgo de mercado, el estado del mundo podría describirse mediante una lista de los precios de todos los valores y todos los tipos de cambio, y suponemos que se conoce el conjunto de todas estas listas posibles. Por supuesto, esto supone que los mercados en la fecha T Son líquidos; si no lo son, se requieren modelos más complicados, donde podemos distinguir los riesgos de una posición y de un patrimonio neto futuro, ya que, con mercados ilíquidos, la asignación de la primera a la segunda puede no ser lineal.
+Retomaremos los axiomas más importantes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Translation invariance: indica que la función principal de una medida de riesgo es clasificar adecuadamente los riesgos.&lt;/li&gt;
+  &lt;li&gt;Subaditividad: supongamos que dos escritorios en una empresa calculan de manera descentralizada las medidas ρ (X1) y ρ (X2) de los riesgos que han tomado. Si la función ρ es subaditiva, el supervisor de los dos escritorios puede contar con el hecho de que ρ (X1) + ρ (X2) es una garantía factible en relación con el riesgo global X1 + X2. Si de hecho tiene una cantidad m de efectivo disponible para su negocio conjunto, sabe que imponer límites m1 y m2 con m = m1 + m2, le permite descentralizar su restricción de efectivo en dos restricciones de efectivo, una por escritorio.&lt;/li&gt;
+  &lt;li&gt;Homogeneidad positiva: Si el tamaño de la posición influye directamente en el riesgo (por ejemplo, si las posiciones son lo suficientemente grandes como para que el tiempo requerido para liquidarlas dependa de sus tamaños), deberíamos considerar las consecuencias de la falta de liquidez al calcular el patrimonio neto futuro de una posición.&lt;/li&gt;
+  &lt;li&gt;Monotonía: descarta la medida de riesgo definida por ρ (X) = -EP [X] + α · σP (X), donde α&amp;gt; 0 y donde σP denota el operador de desviación estándar, calculado bajo la probabilidad P.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Por lo tanto, la coherencia se define como una medida de riesgo que cumpla con los cuatro axiomas. Por ejemplo: el modelo conocido como “Value At Risk” (VaR) no es una medida de riesgo “coherente”, debido al hecho de que el VaR es un cuantil en la distribución de ganancias y pérdidas y no una expectativa y no cumple con el requisito de la subaditividad.&lt;/p&gt;
+
+&lt;h2 id=&quot;activos-de-riesgo-y-momentos-de-orden-superior&quot;&gt;Activos de riesgo y momentos de orden superior&lt;/h2&gt;
+
+&lt;p&gt;Los activos riesgosos tienen un importante papel que desempeñar en los portafolios de la mayoría de los inversionistas en un mercado liquido. Los inversionistas suelen ser caracterizados por niveles de riesgo y de riqueza, ciertas estrategias tienden a tener un riesgo similar pero suelen ser diferentes por la naturaleza de los instrumentos; otros tienden a encajar mejor en un grupo de riesgo de tipo patrimonial. La clasificación es arbitraria ya que no hay una definición exacta. Sin embargo, discutiendo el Investment Policy Statement (IPS), puedes encontrar donde pertenece tu cliente con sus respectivas restricciones.&lt;/p&gt;
+
+&lt;p&gt;Las mayoría de estrategias de inversión están en función de rendimiento y las expectativas de riesgo - rendimiento por unidad de inversión. En este orden de ideas, los inversionistas son compensados por las distribuciones de rendimientos asociadas con una leptocurtosis y un sesgo negativo, y en algunos casos, sesgo positivo. Como tal, una optimización tradicional de mínima varianza tenderá a no ser preciso, debido a que el mercado no se distribuye de manera normal.&lt;/p&gt;
+
+&lt;p&gt;Como lo menciona Brunel (2002) esto crea un enigma, ya que tiende a exponer al inversionista al riesgo de establecer una exposición máxima, buscando soluciones, que van desde un modelo sofisticado hasta un modelo simple. Recordemos que los &lt;em&gt;hedge funds&lt;/em&gt; surgieron porque los administradores de portafolios identifican la oportunidad que brinda la liquidez limitada, asimetrías de información y costos de transacción significativos. Implican estrategias que permiten a los inversionistas cambiarse de clases de activos de inversión, sin una restricción por un banco o casa de bolsa. Agentes económicos con estrategias simples que buscan beneficiarse de circunstancias del mercado, o estrategias con características de una distribución de rendimientos normal es insuficiente. Por lo tanto, se debe de buscar medidas que ponderan los pesos para incorporar modelos con una $R^2$ más significativa. Por lo tanto, hay un largo camino por recorrer para poder incorporar los cuatro momentos (promedio, desviación estándar, asimetría y curtosis), correlaciones, co-asimetría y co-curtosis en un portafolio de inversión. Davies, Kat y Lu (2004) identifican que algunos &lt;em&gt;hedge funds&lt;/em&gt; incorporan algunos activos debido a una baja co-varianza, un alto co-sesgo y una baja co-curtosis. Finalmente, es interesante incorporar medidas para distribuciones no-Gaussianas en un portafolio.&lt;/p&gt;
+
+&lt;h3 id=&quot;bibliografía&quot;&gt;Bibliografía&lt;/h3&gt;
+
+&lt;p&gt;Artzner, Delbaen, Eber y Heath. (1998). Coherent Risk Measures. Mathematical Finance, Vol. 9, No. 3 (July 1999), 203–228.&lt;/p&gt;
+
+&lt;p&gt;Brunel, J. (2002). Integrated Wealth Management: The New Direction for Portfolio Managers. Institutional Investor Books.&lt;/p&gt;
+
+&lt;p&gt;Davies, Ryan J. and Kat, Harry M. and Lu, Sa, Fund of Hedge Funds Portfolio Selection: A Multiple-Objective Approach (September 2005). Cass Business School Research Paper, ttps://ssrn.com/abstract=476862&lt;/p&gt;
+</description>
+        <pubDate>Sun, 12 Jul 2020 15:39:11 -0500</pubDate>
+        <link>/riesgos-coherentes-y-momentos-de-orden-superior-en-un-portafolio</link>
+        <guid isPermaLink="true">/riesgos-coherentes-y-momentos-de-orden-superior-en-un-portafolio</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Datos relevantes semana 1 de junio</title>
+        <description>&lt;p&gt;Forbes realizó un estudio, en el cual, analizó 455 compañías del S&amp;amp;P 500, excluyendo bancos y gigantes tecnológicos, en promedio las compañías triplicaron su deuda neta desde la última década, añadiendo más de $2.5 trillones de dólares de deuda en su balance general. Debido al factor coronavirus, los ingresos han disminuido pero la deuda hay que seguirla pagando.&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+    &lt;img src=&quot;images/article_3_title.jpeg&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;riesgos&quot;&gt;Riesgos&lt;/h2&gt;
+&lt;p&gt;Los riesgos más nombrados en la economía estadounidense ejemplifican si el desempleo continúa siendo alto y la gente no puede seguir pagando sus hipotecas, ninguna ayuda del gobierno puede evitar que los precios de la vivienda caigan, pero si la tasa de interés se mantiene baja y el empleo aumenta, pudieran factores de relevancia para el sector en los Estados Unidos.&lt;/p&gt;
+
+&lt;h2 id=&quot;datos-importantes&quot;&gt;Datos importantes&lt;/h2&gt;
+&lt;p&gt;El jueves hay junta del presidente del BCE (Banco Central Europeo), Christine Lagarde, recientemente describió un escenario negativo para la economía europea. Las propuestas de Alemania, Francia y la Comisión Europea para un considerable apoyo fiscal conjunto, incluyen las donaciones a los países más afectados por la pandemia, probablemente serán percibidas como un desarrollo positivo por el banco central.&lt;/p&gt;
+
+&lt;p&gt;Por último, el viernes es el informe de empleo de abril, la Oficina de Estadísticas Laborales (BLS) estimó la pérdida de empleos de aproximadamente por 20 millones, el mes pasado casi el 80% de los trabajadores desempleados describieron su pérdida de trabajo como temporal. Si esa proporción sigue siendo alta, podría apuntar hacia una recuperación relativamente rápida a medida que las condiciones de bloqueo disminuyan&lt;/p&gt;
+</description>
+        <pubDate>Mon, 01 Jun 2020 15:10:03 -0500</pubDate>
+        <link>/datos-relevantes-semana-1-de-junio</link>
+        <guid isPermaLink="true">/datos-relevantes-semana-1-de-junio</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Lo que todos deberían saber, pero nadie les ha dicho de los seguros con componente de inversión</title>
+        <description>&lt;p&gt;Algunas personas creen que al juntar un seguro con un producto de ahorro o inversión están incrementando su riqueza de la manera óptima, pero nadie les ha dicho que no es la mejor opción.&lt;/p&gt;
+
+&lt;p&gt;Como primer acercamiento, un inversionista acude a instituciones de crédito o compañías de seguros para puntualizar sus problemas con el agente, el cual rápidamente le ofrece algún producto ya hecho dentro de su gama de soluciones. En este sentido, a partir de este momento señalaré por qué no debes juntar inversión con un seguro.&lt;/p&gt;
+
+&lt;h3 id=&quot;un-agente-de-seguros-es-un-asesor-calificado-en-inversiones&quot;&gt;¿Un agente de seguros es un asesor calificado en inversiones?&lt;/h3&gt;
+
+&lt;p&gt;Es común observar en el mercado a “asesores financieros”, o como tienen en sus tarjetas “financial advisor” o “financial planner”, que sin haber estudiado una carrera especializada ya sea en economía, finanzas, contabilidad, o en su caso administración, ofrezcan ser expertos en el tema. Desafortunadamente, estas personas tienen su capacitación en ventas, lo que significa que convencen a los prospectos haciendo atractivos los productos sin contar con el conocimiento del riesgo por activo.&lt;/p&gt;
+
+&lt;h3 id=&quot;los-productos-de-inversión-o-ahorro-proveen-grandes-beneficios-fiscales-en-el-corto-plazo&quot;&gt;¿Los productos de inversión o ahorro proveen grandes beneficios fiscales en el corto plazo?&lt;/h3&gt;
+
+&lt;p&gt;Un argumento de venta de un vendedor es mostrar cómo un seguro flexible (seguro con componente de ahorro o inversión) procede a ser exento o deducible de impuestos. Con base en el artículo 93, fracción XXI de la Ley del Impuesto Sobre la Renta (LISR), los ingresos derivados de instituciones de seguros presentan las exenciones que son aplicables cuando ocurra el riesgo amparado por la póliza contratada. Adicionalmente en el artículo 151 (LISR), fracción V, de las aportaciones voluntarias a la subcuenta de retiro, se podrá hacer deducible hasta el 10% de las aportaciones, sin que excedan a cinco salarios mínimos generales del área geográfica, adicionando que si se hace efectivo el retiro de capital antes de los 65 años se pagará como ingreso acumulable. Y finalmente, en el artículo 185 (LISR), de los estímulos fiscales, a los contribuyentes que efectúen depósitos en las cuentas especiales para el ahorro, realicen pagos de primas relacionados con planes de pensiones, jubilación o retiro podrán restar el importe de dichos depósitos, pagos de la cantidad que se aplicará la tarifa del artículo 152 de esta Ley, exceptuando que no podrán sobrepasar en el año por $152,000 pesos, debiendo transcurrir un plazo de 5 años a partir de la fecha de adquisición. Por último, en este mismo artículo menciona la prohibición de efectuar la deducción a contribuyentes que realicen los pagos de primas de seguro que tengan como base planes de pensiones relacionados con edad, jubilación o retiro y además aseguren la vida del contratante, no podrá efectuar la deducción por la parte de la prima que cubre el seguro de vida. El cargo del fallecimiento será tratado como exento dentro del artículo 93 fracción XXI y la parte del cargo para cubrir la pensión, jubilación, la institución deberá retener el 20%, sin deducción alguna (artículo 142, fracción XVI) como pago provisional el impuesto que resulte en términos del artículo 145 de esta ley.&lt;/p&gt;
+
+&lt;h3 id=&quot;el-asesor-de-ventas-me-ofrece-los-mejores-instrumentos&quot;&gt;¿El asesor de ventas me ofrece los mejores instrumentos?&lt;/h3&gt;
+
+&lt;p&gt;Los seguros flexibles o dotales (plazo largo forzoso) mantienen una característica de anualidad por lo que al comparar los productos que ofrecen diferentes instituciones se caracterizan por la curva de rendimiento que utilizan para mostrar el rendimiento final, por lo que usualmente el inversionista se deja llevar por la tasa, y no, por las comisiones que cobra tanto la aseguradora como el agente, el cual ofrecerá el “instrumento” que mayor comisión le genere.&lt;/p&gt;
+
+&lt;h3 id=&quot;la-importancia-de-invertir-con-comisiones-bajas&quot;&gt;La importancia de invertir con comisiones bajas&lt;/h3&gt;
+
+&lt;p&gt;Debido a que la finalidad de la institución de seguros no es la gestión de inversiones, para colocar un portafolio, ya sea en fondos de inversión o ETFs, lo que le genera un nuevo gasto de administración, que suele trasladar por medio de comisiones a los usuarios finales.&lt;/p&gt;
+
+&lt;h3 id=&quot;la-importancia-de-la-liquidez&quot;&gt;La importancia de la liquidez&lt;/h3&gt;
+
+&lt;p&gt;Una de las desventajas de los seguros con componente de inversión es la nula liquidez que te ofrecen, al tener contratado este producto te venden con la restricción que no puedes retirar en 5, 10, 15, 20, etc. Y si intentas retirar, te generará una penalización por no cumplir con el periodo debido a que el dinero de las primas y portafolio se encuentra solventando las operaciones de la aseguradora.&lt;/p&gt;
+
+&lt;h3 id=&quot;la-importancia-de-la-diversificación&quot;&gt;La importancia de la diversificación&lt;/h3&gt;
+
+&lt;p&gt;Cada individuo posee distintos objetivos de rendimiento, tolerancia al riesgo, capacidad al riesgo, o requerimientos propios. Al haber portafolios generales, que ya están hechos y te lo venden como gestión pasiva, se corrompe la composición de instrumentos financieros que por lo menos sigan la teoría de portafolios clásica. Por ejemplo, hay agentes que te venden productos indizados al S&amp;amp;P500 (proxy del mercado estadounidense) o al S&amp;amp;P/BMV IPC (proxy del mercado mexicano), donde afortunadamente después de casi 11 años de la última crisis financiera los mercados han estado apreciándose, sin embargo, ahora imaginen una nueva crisis financiera como golpearía al portafolio de los individuos que solo se los vendieron sin el debido conocimiento de la necesidad del cliente. Esto podría ocasionar una minusvalía o pérdida muy importante en los portafolios, por lo tanto, un inversionista debe buscar una relación adecuada con el riesgo-beneficio para una administración óptima de su capital.&lt;/p&gt;
+
+&lt;h3 id=&quot;no-se-puede-garantizar-rendimientos&quot;&gt;No se puede garantizar rendimientos&lt;/h3&gt;
+
+&lt;p&gt;Existen compañías que te garantizan rendimientos al final de los periodos de tu ahorro o inversión, lo cual es una mala práctica en el mercado, debido a que no es posible garantizar rendimientos ya que las condiciones de mercado no son determinísticas.&lt;/p&gt;
+
+&lt;h3 id=&quot;la-creación-de-los-seguros-con-componente-de-inversión&quot;&gt;La creación de los seguros con componente de inversión&lt;/h3&gt;
+
+&lt;p&gt;Con base en la propia Comisión Nacional de Seguros y Fianzas (CNSF) voy a explicar la base y surgimiento de los seguros con componente de inversión. El seguro con componente de inversión opera sobre un mecanismo mediante el cual el asegurado ejerce su derecho a la opción de préstamo por el monto máximo, de acuerdo con la reserva matemática constituida; al mismo tiempo, el asegurado instruye a la compañía a colocar esta cantidad en una institución bancaria, mediante un contrato de fideicomiso.&lt;/p&gt;
+
+&lt;p&gt;En 1982 la banca mexicana fue nacionalizada, y se rompió el vínculo empresarial que algunas compañías de seguros tenían con instituciones bancarias. Esta situación evidenció la descapitalización que el seguro con inversión provocaba a las aseguradoras, ya que los recursos de las reservas matemáticas que en un tiempo se encontraban en fideicomisos, fuera de las compañías de seguros, pero dentro de instituciones bancarias pertenecientes al mismo grupo empresarial, ahora quedaban en sociedades nacionales de crédito totalmente ajenas a las instituciones de seguros.&lt;/p&gt;
+
+&lt;p&gt;Así surgen los seguros de vida capitalizables, en los cuales existe un fondo de dividendos en administración que maneja la propia aseguradora. Existen dos tipos de seguro de vida con capitalización: uno es el seguro flexible, y el otro consiste, en una combinación de seguros tradicionales de vida a largo plazo con seguros dotales de corta duración.&lt;/p&gt;
+
+&lt;p&gt;Los dividendos en administración y la reserva matemática se manejen en un solo fondo, siempre y cuando el saldo de dicha cuenta se encuentre actualizado mes a mes. En cuanto a los aspectos en los cuales el seguro flexible ofrece desventajas con respecto al seguro tradicional, se presenta para el asegurado un esquema de castigos al valor de rescate, como porcentajes de la reserva matemática, en caso de que se retire del seguro durante los primeros dos años de vigencia del contrato, con objeto de que la aseguradora pueda recuperar, al menos en parte, los gastos de administración y de adquisición efectuados por la emisión de la póliza.&lt;/p&gt;
+
+&lt;p&gt;En general, el compromiso de aseguramiento se basa en períodos mensuales de cobertura. La aseguradora invierte los recursos del asegurado y descuenta el costo de las coberturas contratadas correspondiente a un mes de vigencia. De esta manera, mientras el fondo sea suficiente para cubrir el costo de la protección, la póliza continúa en vigor. Dentro del marco legal, no existe una disposición explícita que obligue a las aseguradoras a retribuir al asegurado, en forma total o parcial, el excedente financiero obtenido en el manejo de sus recursos.&lt;/p&gt;
+
+&lt;p&gt;En función de las condiciones que determina la compañía de seguros para otorgar comisiones, podemos clasificarlos como:&lt;/p&gt;
+
+&lt;p&gt;Comisiones Directas. Son aquellas que se acreditan al agente, conforme el asegurado va realizando el pago de primas.
+Gastos de Adquisición Indirectos. Son los que se reconocen al agente en la medida en que cumpla con determinadas metas, que fija anualmente cada institución de seguros, en función de incrementos de producción, conservación de negocios, mantenimiento de cartera, así como el costo de reclutamiento de otros agentes.
+En general, en los seguros flexibles y de vida a largo plazo, los gastos de adquisición de primer año suelen ser altos; mientras que a partir del segundo año se dan en una escala decreciente, pudiendo incluso llegar a eliminarse antes de que concluya el plazo de pago de prima.&lt;/p&gt;
+
+&lt;h3 id=&quot;canal-de-ventas&quot;&gt;Canal de ventas&lt;/h3&gt;
+
+&lt;p&gt;Los seguros flexibles, en general, se comercializan a través de intermediarios de seguros, principalmente personas físicas, aunque también, en una mínima proporción, por agentes de seguros como personas morales.&lt;/p&gt;
+
+&lt;p&gt;Las instituciones de seguros son parte del sistema financiero, pero no pueden intermediar como banca de primer nivel; por lo que dependen de los intermediarios financieros para la colocación de ahorro, de ahí la desventaja de estas para poder ofrecer alta rentabilidad.&lt;/p&gt;
+
+&lt;p&gt;En algunas instituciones con carteras importantes de seguro de vida individual, se ha detectado que en ocasiones los propios agentes de seguros invitan a los asegurados a cancelar pólizas que ya cuentan con varios años de vigencia, para posteriormente colocar nuevos negocios con esos mismos asegurados, argumentando la necesidad de actualizar las sumas aseguradas en un proceso denominado «jineteo» de la cartera. Lo anterior, en realidad es un pretexto que utilizan ciertos agentes para que sus clientes vuelvan a pagar primas iniciales, y así, poder recibir comisiones de primer año.&lt;/p&gt;
+
+&lt;h4 id=&quot;conclusión&quot;&gt;Conclusión&lt;/h4&gt;
+
+&lt;p&gt;En conclusión, es menester que las personas consideren tener un seguro para sus bienes, vida, gastos médicos pero a la hora de tomar decisiones en las que su patrimonio esté siendo administrado, no pueden dejarse llevar solo por convencimiento de agentes de ventas, ya sea de seguros, bancos o casas de bolsa que embellecen cualquier producto. Por lo tanto, hay que hacer un estudio del sector, comparar comisiones y separar inversiones de una compañía de seguros. En consecuencia, es necesario ir a una firma especializada en inversiones capacitada que su fin sea incrementar la riqueza del agente económico y no que sea utilizado para contribuir a las operaciones de reservas de capital.&lt;/p&gt;
+
+&lt;h5 id=&quot;bibliografía&quot;&gt;Bibliografía&lt;/h5&gt;
+
+&lt;p&gt;Ley del Impuesto Sobre la Renta&lt;/p&gt;
+</description>
+        <pubDate>Wed, 27 May 2020 15:17:54 -0500</pubDate>
+        <link>/lo-que-todos-deberian-saber-pero-nadie-les-ha-dicho-de-los-seguros-con-componente-de-inversion</link>
+        <guid isPermaLink="true">/lo-que-todos-deberian-saber-pero-nadie-les-ha-dicho-de-los-seguros-con-componente-de-inversion</guid>
+        
+        <category>seguros</category>
+        
+        <category>inversion</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>Tasas negativas, oportunidad o contratiempo</title>
+        <description>&lt;p&gt;Los bancos centrales, al ser instituciones independientes y tener distintos mandatos de acuerdo con las políticas y necesidades de cada país, podemos observar una política monetaria con la cual restringen o incrementan la liquidez. Aumentando o disminuyendo las tasas de acuerdo con el nivel de precios para mantener un equilibrio en la economía. Uno de los métodos que han mantenido a los economistas a la vanguardia es la posibilidad de incorporar una tasa de interés negativa. En consecuencia, se pretende mantener el tipo de cambio bajo y hacer atractivo a un país por sus bienes y servicios relativamente baratos y, por lo tanto, obtener mayores exportaciones. 
+Actualmente Suiza, Dinamarca, el Banco Central Europeo, Suecia y Japón presentan una política monetaria con tasa negativa, cuyo objetivo es estimular el crecimiento, el gasto y controlar la inflación. En este orden de ideas y para ejemplificar, el Banco Central Europeo incorporó compras de bonos para inyectar dinero a la economía, donde las tasas de rendimiento de los bonos gubernamentales son casi cero o negativas, manteniendo a miembros de la zona, como Italia, país con una deuda grande, con un bajo costo de préstamos para empresas.&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-pasa-con-la-inflación&quot;&gt;¿Qué pasa con la inflación?&lt;/h2&gt;
+&lt;p&gt;Existen dos casos generales en cuanto a la política monetaria: el primero, cuando se aumenta la tasa de interés para disminuir la inflación; el segundo, cuando se disminuye la tasa de interés para incrementar el nivel de precios. Sin embargo, presenciamos un tercer caso con tasas negativas, que, se estima, es una medida contra la deflación. Una baja inflación puede perjudicar a una economía cuando una caída de precios arraiga a que los agentes económicos posterguen su expectativa de consumo (esperando precios más baratos).&lt;/p&gt;
+
+&lt;h2 id=&quot;qué-es-el-quantitative-easing&quot;&gt;¿Qué es el Quantitative Easing?&lt;/h2&gt;
+&lt;p&gt;El Quantitative Easing (QE) es una política monetaria agresiva en la cual los bancos centrales compran importantes cantidades de activos, siendo esta una inyección de efectivo de manera directa. No obstante, no todo es positivo, ya que el QE puede generar un aumento en los precios. Esto reduce la capacidad de compra de las personas y empresas, y puede disminuir el efecto positivo del programa, ya que los inversionistas podrían exigir una mayor rentabilidad para cubrir el riesgo por inflación.&lt;/p&gt;
+
+&lt;h2 id=&quot;impacto-en-bancos-comerciales&quot;&gt;Impacto en bancos comerciales&lt;/h2&gt;
+&lt;p&gt;Las tasas negativas estimulan los costos de préstamos; en esta situación, los bancos comerciales deben pagar al banco central por mantener el dinero en vez de obtener interés por él; por lo que deben tener un incentivo para prestar dinero a costos bajos a otros bancos, empresas y personas, cobrando una comisión a algunos clientes por los depósitos. De esta manera, se estimula el préstamo, mayor gasto y menor ahorro. 
+Por otra parte, el banco central es aquella institución que cobra una comisión a las instituciones financieras por mantener el dinero de sus clientes. Mientras que los bancos comerciales adquieren el costo y se lo transfieren a algunos de sus clientes, pero no a todos; algunos han protegido al cliente promedio, cobrando a clientes en fondos de pensiones o fondos de inversión.&lt;/p&gt;
+
+&lt;h2 id=&quot;impacto-a-personas&quot;&gt;Impacto a personas&lt;/h2&gt;
+&lt;p&gt;Ante la existencia de tasas de interés negativas, se podría pensar que se debería devolver dinero, por ejemplo, al utilizar la tarjeta de crédito. Sin embargo, lo que se implementa es una mejor condición de créditos y no una devolución por interés. Lo que sí es un hecho es que los agentes económicos pudieran recibir un cobro por medio del banco comercial. Otra forma que podría impactar a las personas en un contexto con tasas negativas es al momento de evaluar un proyecto de inversión, donde la tasa de descuento se verá afectada generando se acepten más propuestas de inversión. Por lo tanto, la persona física o jurídica se encuentra en la posición de buscar oportunidades en el extranjero para poder obtener un rendimiento superior que en el país donde reside.&lt;/p&gt;
+
+&lt;h2 id=&quot;oportunidad-o-contratiempo&quot;&gt;Oportunidad o contratiempo&lt;/h2&gt;
+&lt;p&gt;En el mes de agosto pudimos presenciar que la curva de rendimiento de Alemania desde corto plazo hasta el bono de 30 años tuviera tasas negativas. Esto converge a nuestro motivo del artículo en el cual, se podrá plantear que dada las condiciones de tasas de interés negativas es mejor gastar tu dinero. Enfatizo, que esa perspectiva es errónea dado que hay una oportunidad en el mercado doméstico o extranjero que un inversionista debe aprovechar cualquier circunstancia del mercado para ser redituable y constante. Parte de la curva que controla el banco central y los inversionistas&lt;/p&gt;
+
+&lt;div style=&quot;text-align: center&quot;&gt;
+    &lt;img src=&quot;images/article1.png&quot; alt=&quot;&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;Para ejemplificar una curva de rendimiento sana, observamos en el eje de las Y, el rendimiento, en el eje de las X, el tiempo. Por lo tanto, lo que tratamos de explicar en este ejemplo es que la política monetaria que implemente un Banco Central tendrá un impacto en las tasas de corto plazo en el mercado de deuda y del lado derecho podemos observar que el sentimiento de mercado tiende a variar el rendimiento con base al apetito al riesgo de los inversionistas.&lt;/p&gt;
+
+&lt;p&gt;Por lo tanto, nuestro enfoque se mantiene a que ante cualquier movimiento de mercado vamos a proteger el patrimonio de nuestros inversionistas y generarles rendimientos positivos.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 18 May 2020 10:36:09 -0500</pubDate>
+        <link>/tasas-negativas-oportunidad-o-contratiempo</link>
+        <guid isPermaLink="true">/tasas-negativas-oportunidad-o-contratiempo</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
